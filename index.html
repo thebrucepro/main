@@ -1,18 +1,66 @@
-<html>
-  <head><title>pagina principal</title></head>
-  <body>
-    <h1>selecciona un sitio al que ir</h1>
-    <a href="https://thebrucepro.github.io/grupo_10/">
-            <img src="https://alchetron.com/cdn/max-uhle-34730c55-528c-4b9b-b417-e899deacaec-resize-750.jpg" alt="Descubridores Mochica" width="400" height="450">
-        </a>
-    <a href="https://thebrucepro.github.io/la_convenci-n">
-      <img src="https://sge.org/wp-content/uploads/2022/10/Mapa-de-la-Provincia-de-la-Convenci%C3%B3n-Regi%C3%B3n-de-Cusco.jpg" width="400" height="450">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Principal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card h2 {
+      margin: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selecciona un sitio al que ir</h1>
+  <div class="grid">
+    <a href="https://thebrucepro.github.io/grupo_10/#" class="card">
+      <img src="https://alchetron.com/cdn/max-uhle-34730c55-528c-4b9b-b417-e899deacaec-resize-750.jpg" alt="Descubridores Mochica">
+      <h2>Descubridores Mochica</h2>
     </a>
-    <a href="">
-      <img src="https://as1.ftcdn.net/v2/jpg/00/77/27/44/1000_F_77274433_aHWKx4Up0iAEr6kEIfLVMIZDTDVco9TE.jpg" width="400" height="450">
+    <a href="https://thebrucepro.github.io/la_convenci-n/#" class="card">
+      <img src="https://i.pinimg.com/736x/b2/8b/34/b28b3434475354439762daed3c6c90ff.jpg" alt="Mapa de La Convención">
+      <h2>La Convención</h2>
     </a>
-    <a href="https://thebrucepro.github.io/main/titulo-IV/index.html">
-      <img src="https://cdn1.vectorstock.com/i/1000x1000/78/80/website-under-construction-vector-21727880.jpg" width="400" height="450">
+    <a href="https://thebrucepro.github.io/main/cintura-pelviana/#" class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.TfEsXERmOjVQnzjRkaX7gwAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cintura Pelviana">
+      <h2>Cintura Pelviana</h2>
     </a>
-  </body>
+    <a href="https://thebrucepro.github.io/main/titulo-IV/#" class="card">
+      <img src="https://cdn1.vectorstock.com/i/1000x1000/78/80/website-under-construction-vector-21727880.jpg" alt="Página en construcción">
+      <h2>Título IV</h2>
+    </a>
+  </div>
+</body>
 </html>
+
